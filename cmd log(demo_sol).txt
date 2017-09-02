@@ -1,0 +1,330 @@
+Microsoft Windows [Version 10.0.15063]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+C:\Users\cbma>d:
+
+D:\>cd D:\SOL-master
+
+D:\SOL-master>virtualenv --system-site-packages pyenv
+'virtualenv' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\SOL-master>  pip install virtualenv
+Collecting virtualenv
+  Using cached virtualenv-15.1.0-py2.py3-none-any.whl
+Installing collected packages: virtualenv
+Successfully installed virtualenv-15.1.0
+
+D:\SOL-master>virtualenv --system-site-packages pyenv
+New python executable in D:\SOL-master\pyenv\Scripts\python.exe
+Installing setuptools, pip, wheel...done.
+
+D:\SOL-master>pyenv/Scripts/activate
+'pyenv' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\SOL-master>cd D:\SOL-master\pyenv\Scripts
+
+D:\SOL-master\pyenv\Scripts>activate
+
+(pyenv) D:\SOL-master\pyenv\Scripts>cd D:\SOL-master
+
+(pyenv) D:\SOL-master>python setup.py build
+warning: pypandoc module not found, DONOT convert Markdown to RST
+Warning: Extension name 'pysol' does not match fully qualified name 'python.pysol' of 'python/pysol.pyx'
+Compiling python/pysol.pyx because it changed.
+[1/1] Cythonizing python/pysol.pyx
+running build
+running build_py
+creating build\lib.win-amd64-2.7
+creating build\lib.win-amd64-2.7\sol
+copying python\cv.py -> build\lib.win-amd64-2.7\sol
+copying python\dataset.py -> build\lib.win-amd64-2.7\sol
+copying python\demo.py -> build\lib.win-amd64-2.7\sol
+copying python\demo_sol.py -> build\lib.win-amd64-2.7\sol
+copying python\sol_classifiers.py -> build\lib.win-amd64-2.7\sol
+copying python\sol_test.py -> build\lib.win-amd64-2.7\sol
+copying python\sol_train.py -> build\lib.win-amd64-2.7\sol
+copying python\target_process.py -> build\lib.win-amd64-2.7\sol
+copying python\__init__.py -> build\lib.win-amd64-2.7\sol
+running build_ext
+building 'pysol' extension
+creating build\temp.win-amd64-2.7
+creating build\temp.win-amd64-2.7\Release
+creating build\temp.win-amd64-2.7\Release\python
+creating build\temp.win-amd64-2.7\Release\src
+creating build\temp.win-amd64-2.7\Release\src\sol
+creating build\temp.win-amd64-2.7\Release\src\sol\loss
+creating build\temp.win-amd64-2.7\Release\src\sol\model
+creating build\temp.win-amd64-2.7\Release\src\sol\model\olm
+creating build\temp.win-amd64-2.7\Release\src\sol\pario
+creating build\temp.win-amd64-2.7\Release\src\sol\util
+creating build\temp.win-amd64-2.7\Release\external
+creating build\temp.win-amd64-2.7\Release\external\json
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tppython/pysol.cpp /Fobuild\temp.win-amd64-2.7\Release\python/pysol.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+pysol.cpp
+c:\programdata\anaconda2\lib\site-packages\numpy\core\include\numpy\npy_1_7_deprecated_api.h(12) : Warning Msg: Using deprecated NumPy API, disable it by #defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
+python/pysol.cpp(3904) : warning C4244: “参数”: 从“npy_intp”转换到“int”，可能丢失数据
+python/pysol.cpp(5924) : warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+python/pysol.cpp(6188) : warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\c_api.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\c_api.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+c_api.cc
+c:\programdata\anaconda2\lib\site-packages\numpy\core\include\numpy\npy_1_7_deprecated_api.h(12) : Warning Msg: Using deprecated NumPy API, disable it by #defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
+src/sol\c_api.cc(70) : warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\loss\bool_loss.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\loss\bool_loss.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+bool_loss.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\loss\hinge_loss.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\loss\hinge_loss.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+hinge_loss.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\loss\logistic_loss.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\loss\logistic_loss.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+logistic_loss.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\loss\loss.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\loss\loss.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+loss.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\loss\square_loss.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\loss\square_loss.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+square_loss.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\model.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\model.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+model.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\olm\ada_fobos.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\olm\ada_fobos.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+ada_fobos.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\olm\ada_rda.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\olm\ada_rda.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+ada_rda.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\olm\alma2.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\olm\alma2.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+alma2.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\olm\arow.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\olm\arow.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+arow.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\olm\cw.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\olm\cw.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+cw.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\olm\eccw.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\olm\eccw.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+eccw.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\olm\fofs.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\olm\fofs.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+fofs.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\olm\ogd.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\olm\ogd.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+ogd.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\olm\pa.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\olm\pa.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+pa.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\olm\perceptron.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\olm\perceptron.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+perceptron.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\olm\rda.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\olm\rda.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+rda.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\olm\sop.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\olm\sop.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+sop.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\online_linear_model.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\online_linear_model.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+online_linear_model.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\online_model.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\online_model.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+online_model.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\model\regularizer.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\model\regularizer.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+regularizer.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\binary_reader.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\binary_reader.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+binary_reader.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\binary_writer.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\binary_writer.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+binary_writer.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\csr_matrix_reader.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\csr_matrix_reader.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+csr_matrix_reader.cc
+c:\programdata\anaconda2\lib\site-packages\numpy\core\include\numpy\npy_1_7_deprecated_api.h(12) : Warning Msg: Using deprecated NumPy API, disable it by #defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\csv_reader.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\csv_reader.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+csv_reader.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\csv_writer.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\csv_writer.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+csv_writer.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\data_iter.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\data_iter.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+data_iter.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\data_point.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\data_point.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+data_point.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\data_reader.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\data_reader.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+data_reader.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\data_read_task.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\data_read_task.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+data_read_task.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\data_writer.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\data_writer.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+data_writer.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\file_reader.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\file_reader.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+file_reader.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\file_writer.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\file_writer.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+file_writer.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\numpy_reader.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\numpy_reader.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+numpy_reader.cc
+c:\programdata\anaconda2\lib\site-packages\numpy\core\include\numpy\npy_1_7_deprecated_api.h(12) : Warning Msg: Using deprecated NumPy API, disable it by #defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\svm_reader.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\svm_reader.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+svm_reader.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\pario\svm_writer.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\pario\svm_writer.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+svm_writer.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\tools.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\tools.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+tools.cc
+src/sol\tools.cc(156) : warning C4244: “=”: 从“int”转换到“sol::real_t”，可能丢失数据
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpsrc/sol\util\reflector.cc /Fobuild\temp.win-amd64-2.7\Release\src/sol\util\reflector.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+reflector.cc
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -Ic:\programdata\anaconda2\lib\site-packages\numpy\core\include -Iinclude -Iexternal -Ic:\programdata\anaconda2\include -ID:\SOL-master\pyenv\PC /Tpexternal/json\jsoncpp.cpp /Fobuild\temp.win-amd64-2.7\Release\external/json\jsoncpp.obj -DHAS_NUMPY_DEV -DUSE_STD_THREAD /wd4251 /wd4275 /EHsc -DSOL_EMBED_PACKAGE
+jsoncpp.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\BIN\amd64\link.exe /DLL /nologo /INCREMENTAL:NO /LIBPATH:c:\programdata\anaconda2\Libs /LIBPATH:D:\SOL-master\pyenv\libs /LIBPATH:D:\SOL-master\pyenv\PCbuild\amd64 /LIBPATH:D:\SOL-master\pyenv\PC\VS9.0\amd64 /EXPORT:initpysol build\temp.win-amd64-2.7\Release\python/pysol.obj build\temp.win-amd64-2.7\Release\src/sol\c_api.obj build\temp.win-amd64-2.7\Release\src/sol\loss\bool_loss.obj build\temp.win-amd64-2.7\Release\src/sol\loss\hinge_loss.obj build\temp.win-amd64-2.7\Release\src/sol\loss\logistic_loss.obj build\temp.win-amd64-2.7\Release\src/sol\loss\loss.obj build\temp.win-amd64-2.7\Release\src/sol\loss\square_loss.obj build\temp.win-amd64-2.7\Release\src/sol\model\model.obj build\temp.win-amd64-2.7\Release\src/sol\model\olm\ada_fobos.obj build\temp.win-amd64-2.7\Release\src/sol\model\olm\ada_rda.obj build\temp.win-amd64-2.7\Release\src/sol\model\olm\alma2.obj build\temp.win-amd64-2.7\Release\src/sol\model\olm\arow.obj build\temp.win-amd64-2.7\Release\src/sol\model\olm\cw.obj build\temp.win-amd64-2.7\Release\src/sol\model\olm\eccw.obj build\temp.win-amd64-2.7\Release\src/sol\model\olm\fofs.obj build\temp.win-amd64-2.7\Release\src/sol\model\olm\ogd.obj build\temp.win-amd64-2.7\Release\src/sol\model\olm\pa.obj build\temp.win-amd64-2.7\Release\src/sol\model\olm\perceptron.obj build\temp.win-amd64-2.7\Release\src/sol\model\olm\rda.obj build\temp.win-amd64-2.7\Release\src/sol\model\olm\sop.obj build\temp.win-amd64-2.7\Release\src/sol\model\online_linear_model.obj build\temp.win-amd64-2.7\Release\src/sol\model\online_model.obj build\temp.win-amd64-2.7\Release\src/sol\model\regularizer.obj build\temp.win-amd64-2.7\Release\src/sol\pario\binary_reader.obj build\temp.win-amd64-2.7\Release\src/sol\pario\binary_writer.obj build\temp.win-amd64-2.7\Release\src/sol\pario\csr_matrix_reader.obj build\temp.win-amd64-2.7\Release\src/sol\pario\csv_reader.obj build\temp.win-amd64-2.7\Release\src/sol\pario\csv_writer.obj build\temp.win-amd64-2.7\Release\src/sol\pario\data_iter.obj build\temp.win-amd64-2.7\Release\src/sol\pario\data_point.obj build\temp.win-amd64-2.7\Release\src/sol\pario\data_reader.obj build\temp.win-amd64-2.7\Release\src/sol\pario\data_read_task.obj build\temp.win-amd64-2.7\Release\src/sol\pario\data_writer.obj build\temp.win-amd64-2.7\Release\src/sol\pario\file_reader.obj build\temp.win-amd64-2.7\Release\src/sol\pario\file_writer.obj build\temp.win-amd64-2.7\Release\src/sol\pario\numpy_reader.obj build\temp.win-amd64-2.7\Release\src/sol\pario\svm_reader.obj build\temp.win-amd64-2.7\Release\src/sol\pario\svm_writer.obj build\temp.win-amd64-2.7\Release\src/sol\tools.obj build\temp.win-amd64-2.7\Release\src/sol\util\reflector.obj build\temp.win-amd64-2.7\Release\external/json\jsoncpp.obj /OUT:build\lib.win-amd64-2.7\pysol.pyd /IMPLIB:build\temp.win-amd64-2.7\Release\python\pysol.lib /MANIFESTFILE:build\temp.win-amd64-2.7\Release\python\pysol.pyd.manifest
+pysol.obj : warning LNK4197: 多次指定导出“initpysol”；使用第一个规范
+   正在创建库 build\temp.win-amd64-2.7\Release\python\pysol.lib 和对象 build\temp.win-amd64-2.7\Release\python\pysol.exp
+
+(pyenv) D:\SOL-master>python setup.py install
+warning: pypandoc module not found, DONOT convert Markdown to RST
+Warning: Extension name 'pysol' does not match fully qualified name 'python.pysol' of 'python/pysol.pyx'
+running install
+running bdist_egg
+running egg_info
+writing sol.egg-info\PKG-INFO
+writing top-level names to sol.egg-info\top_level.txt
+writing dependency_links to sol.egg-info\dependency_links.txt
+writing entry points to sol.egg-info\entry_points.txt
+reading manifest file 'sol.egg-info\SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'sol.egg-info\SOURCES.txt'
+installing library code to build\bdist.win-amd64\egg
+running install_lib
+running build_py
+running build_ext
+creating build\bdist.win-amd64
+creating build\bdist.win-amd64\egg
+copying build\lib.win-amd64-2.7\pysol.pyd -> build\bdist.win-amd64\egg
+creating build\bdist.win-amd64\egg\sol
+copying build\lib.win-amd64-2.7\sol\cv.py -> build\bdist.win-amd64\egg\sol
+copying build\lib.win-amd64-2.7\sol\dataset.py -> build\bdist.win-amd64\egg\sol
+copying build\lib.win-amd64-2.7\sol\demo.py -> build\bdist.win-amd64\egg\sol
+copying build\lib.win-amd64-2.7\sol\demo_sol.py -> build\bdist.win-amd64\egg\sol
+copying build\lib.win-amd64-2.7\sol\sol_classifiers.py -> build\bdist.win-amd64\egg\sol
+copying build\lib.win-amd64-2.7\sol\sol_test.py -> build\bdist.win-amd64\egg\sol
+copying build\lib.win-amd64-2.7\sol\sol_train.py -> build\bdist.win-amd64\egg\sol
+copying build\lib.win-amd64-2.7\sol\target_process.py -> build\bdist.win-amd64\egg\sol
+copying build\lib.win-amd64-2.7\sol\__init__.py -> build\bdist.win-amd64\egg\sol
+byte-compiling build\bdist.win-amd64\egg\sol\cv.py to cv.pyc
+byte-compiling build\bdist.win-amd64\egg\sol\dataset.py to dataset.pyc
+byte-compiling build\bdist.win-amd64\egg\sol\demo.py to demo.pyc
+byte-compiling build\bdist.win-amd64\egg\sol\demo_sol.py to demo_sol.pyc
+byte-compiling build\bdist.win-amd64\egg\sol\sol_classifiers.py to sol_classifiers.pyc
+byte-compiling build\bdist.win-amd64\egg\sol\sol_test.py to sol_test.pyc
+byte-compiling build\bdist.win-amd64\egg\sol\sol_train.py to sol_train.pyc
+byte-compiling build\bdist.win-amd64\egg\sol\target_process.py to target_process.pyc
+byte-compiling build\bdist.win-amd64\egg\sol\__init__.py to __init__.pyc
+creating stub loader for pysol.pyd
+byte-compiling build\bdist.win-amd64\egg\pysol.py to pysol.pyc
+creating build\bdist.win-amd64\egg\EGG-INFO
+copying sol.egg-info\PKG-INFO -> build\bdist.win-amd64\egg\EGG-INFO
+copying sol.egg-info\SOURCES.txt -> build\bdist.win-amd64\egg\EGG-INFO
+copying sol.egg-info\dependency_links.txt -> build\bdist.win-amd64\egg\EGG-INFO
+copying sol.egg-info\entry_points.txt -> build\bdist.win-amd64\egg\EGG-INFO
+copying sol.egg-info\top_level.txt -> build\bdist.win-amd64\egg\EGG-INFO
+writing build\bdist.win-amd64\egg\EGG-INFO\native_libs.txt
+zip_safe flag not set; analyzing archive contents...
+creating 'dist\sol-1.1.0-py2.7-win-amd64.egg' and adding 'build\bdist.win-amd64\egg' to it
+removing 'build\bdist.win-amd64\egg' (and everything under it)
+Processing sol-1.1.0-py2.7-win-amd64.egg
+Copying sol-1.1.0-py2.7-win-amd64.egg to d:\sol-master\pyenv\lib\site-packages
+Adding sol 1.1.0 to easy-install.pth file
+Installing sol_test-script.py script to D:\SOL-master\pyenv\Scripts
+Installing sol_test.exe script to D:\SOL-master\pyenv\Scripts
+Installing sol_train-script.py script to D:\SOL-master\pyenv\Scripts
+Installing sol_train.exe script to D:\SOL-master\pyenv\Scripts
+
+Installed d:\sol-master\pyenv\lib\site-packages\sol-1.1.0-py2.7-win-amd64.egg
+Processing dependencies for sol==1.1.0
+Finished processing dependencies for sol==1.1.0
+
+(pyenv) D:\SOL-master>cd D:\SOL-master\python
+
+(pyenv) D:\SOL-master\python>python
+Python 2.7.13 |Continuum Analytics, Inc.| (default, May 11 2017, 13:17:26) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://anaconda.org
+>>> exit()
+
+(pyenv) D:\SOL-master\python>python demo_sol.py
+training accuracy:
+0.836736008525
+training time cost
+0.0159997940063
+sparsity
+0.00840336084366
+prediction of instance 0
+[-1.]
+model weight
+[  0.00000000e+00   3.10737073e-01   2.48572022e-01  -3.30108255e-02
+  -1.65629402e-01  -1.32452413e-01  -1.04027959e-02   2.43693396e-01
+  -2.02174470e-01  -1.21229231e-01   1.07381478e-01   1.46096339e-02
+   2.56499602e-03   0.00000000e+00   1.31977901e-01   2.37358380e-02
+   3.05504501e-02   3.58571000e-02   6.09526178e-03  -5.41121997e-02
+   8.22197199e-02   8.33532214e-02   2.32124686e-01  -1.87351525e-01
+   6.99322950e-03   1.59346778e-02   1.19970135e-01   1.01118833e-01
+   1.91341490e-02  -1.74920112e-01   3.30837145e-02   7.84415603e-02
+  -1.88361585e-01   5.34249730e-02   7.16342824e-03   4.95689988e-01
+   2.32124686e-01   8.22197199e-02   2.29279120e-02  -6.04746938e-01
+  -5.36710918e-01   2.07717940e-01   4.08974588e-01   5.94502762e-02
+   1.29919956e-02   8.10005367e-02  -5.20892022e-03  -1.03071503e-01
+   1.37178183e-01   1.88213736e-01  -9.14361253e-02  -4.94179219e-01
+  -3.15183908e-01   1.73622608e-01   1.50006458e-01   2.79038604e-02
+   2.32586652e-01   1.46627635e-01   2.81043909e-03  -2.14002412e-02
+   7.63915479e-04  -2.90546864e-01   2.14870259e-01  -2.63435304e-01
+   2.91182876e-01   6.77107126e-02   2.08434656e-01   4.18333597e-02
+   6.51448639e-03   3.17334943e-02   3.00057326e-02   1.18129395e-01
+   2.01690644e-01   2.65260916e-02   6.81045711e-01  -4.52830642e-01
+   4.44933504e-01  -2.16716886e-01   4.04374510e-01   7.55182579e-02
+   9.19013098e-02  -1.24134913e-01  -2.19442204e-01  -4.20454368e-02
+  -5.40546002e-03   1.67155010e-03   2.28198785e-02  -2.07687058e-02
+  -5.75738866e-03   3.63857253e-03  -1.76626872e-02   3.08868592e-03
+   7.62352627e-03  -2.25282228e-03   1.15154851e-02   6.04146160e-02
+  -1.99384727e-02  -1.04565164e-02   1.15111833e-02  -1.22738890e-02
+   1.71843655e-02   3.90805863e-02   1.63317416e-02   9.98560339e-02
+   9.22284741e-03  -9.72427253e-04  -4.95781284e-03   7.77112413e-03
+   6.66849967e-03   7.22624082e-03  -5.88124013e-03   3.52294627e-03
+   1.21674575e-02   8.22205911e-04  -4.98377136e-04   6.30771229e-03
+   7.61614647e-05  -1.68856326e-03   2.72217439e-03   6.85440237e-03]
+along the learning process
+0.710000008345
+0.75
+0.75
+0.76250000298
+
+(pyenv) D:\SOL-master\python>python demo_sol.py
+training accuracy:
+0.836703702807
+training time cost
+0.0160000324249
+sparsity
+0.00840336084366
+prediction of instance 0
+[-1.]
+model weight
+[  0.00000000e+00  -3.10737073e-01  -2.48572022e-01   3.30108255e-02
+   1.65629402e-01   1.32452413e-01   1.04027959e-02  -2.43693396e-01
+   2.02174470e-01   1.21229231e-01  -1.07381478e-01  -1.46096339e-02
+  -2.56499602e-03   0.00000000e+00  -1.31977901e-01  -2.37358380e-02
+  -3.05504501e-02  -3.58571000e-02  -6.09526178e-03   5.41121997e-02
+  -8.22197199e-02  -8.33532214e-02  -2.32124686e-01   1.87351525e-01
+  -6.99322950e-03  -1.59346778e-02  -1.19970135e-01  -1.01118833e-01
+  -1.91341490e-02   1.74920112e-01  -3.30837145e-02  -7.84415603e-02
+   1.88361585e-01  -5.34249730e-02  -7.16342824e-03  -4.95689988e-01
+  -2.32124686e-01  -8.22197199e-02  -2.29279120e-02   6.04746938e-01
+   5.36710918e-01  -2.07717940e-01  -4.08974588e-01  -5.94502762e-02
+  -1.29919956e-02  -8.10005367e-02   5.20892022e-03   1.03071503e-01
+  -1.37178183e-01  -1.88213736e-01   9.14361253e-02   4.94179219e-01
+   3.15183908e-01  -1.73622608e-01  -1.50006458e-01  -2.79038604e-02
+  -2.32586652e-01  -1.46627635e-01  -2.81043909e-03   2.14002412e-02
+  -7.63915479e-04   2.90546864e-01  -2.14870259e-01   2.63435304e-01
+  -2.91182876e-01  -6.77107126e-02  -2.08434656e-01  -4.18333597e-02
+  -6.51448639e-03  -3.17334943e-02  -3.00057326e-02  -1.18129395e-01
+  -2.01690644e-01  -2.65260916e-02  -6.81045711e-01   4.52830642e-01
+  -4.44933504e-01   2.16716886e-01  -4.04374510e-01  -7.55182579e-02
+  -9.19013098e-02   1.24134913e-01   2.19442204e-01   4.20454368e-02
+   5.40546002e-03  -1.67155010e-03  -2.28198785e-02   2.07687058e-02
+   5.75738866e-03  -3.63857253e-03   1.76626872e-02  -3.08868592e-03
+  -7.62352627e-03   2.25282228e-03  -1.15154851e-02  -6.04146160e-02
+   1.99384727e-02   1.04565164e-02  -1.15111833e-02   1.22738890e-02
+  -1.71843655e-02  -3.90805863e-02  -1.63317416e-02  -9.98560339e-02
+  -9.22284741e-03   9.72427253e-04   4.95781284e-03  -7.77112413e-03
+  -6.66849967e-03  -7.22624082e-03   5.88124013e-03  -3.52294627e-03
+  -1.21674575e-02  -8.22205911e-04   4.98377136e-04  -6.30771229e-03
+  -7.61614647e-05   1.68856326e-03  -2.72217439e-03  -6.85440237e-03]
+along the learning process
+0.710000008345
+0.75
+0.75
+0.76250000298
+
+(pyenv) D:\SOL-master\python>sol_train
+usage: sol_train [-h] [-a ALGO] [-t {svm,bin,csv}] [-m MODEL] [-p PASSES]
+                 [--norm {None,L1,L2}] [-b BATCH_SIZE] [--buf_size BUF_SIZE]
+                 [--cv CV [CV ...]] [-f FOLD_NUM]
+                 [--params PARAMS [PARAMS ...]] [--retrain] [-v]
+                 [--log_level LOG_LEVEL] [--log LOG]
+                 input [output]
+sol_train: error: too few arguments

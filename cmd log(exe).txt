@@ -1,0 +1,58 @@
+Microsoft Windows [Version 10.0.15063]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+C:\Users\cbma>d;
+'d' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\cbma>d:
+
+D:\>cd
+
+D:\>D:\SOL-master\build\bin\Debug
+'D:\SOL-master\build\bin\Debug' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\>cd D:\SOL-master\build\bin\Debug
+
+D:\SOL-master\build\bin\Debug>sol_train -a ogd --params eta=0.1 D:\SOL-master\build\data/a1a.t model
+Model Information:
+{
+   "clf_num" : 1,
+   "cls_num" : 2,
+   "loss" : "hinge",
+   "model" : "ogd",
+   "norm" : 0,
+   "online" : {
+      "bias_eta" : 0,
+      "dim" : 1,
+      "eta" : 0.1,
+      "lazy_update" : "false",
+      "power_t" : 0.5,
+      "t" : 0
+   }
+}
+
+Training Process....
+Data No.        Iterate No.     Error Rate      Update No.
+2               2               0.500000        2
+4               4               0.250000        3
+8               8               0.375000        6
+16              16              0.437500        14
+32              32              0.343750        23
+64              64              0.296875        37
+128             128             0.273438        71
+256             256             0.246094        124
+512             512             0.226563        242
+1024            1024            0.218750        492
+2048            2048            0.207031        1023
+4096            4096            0.184814        1967
+8192            8192            0.170898        3760
+16384           16384           0.166016        7156
+30956           30956           0.163296        12968
+training accuracy: 0.8367
+training time: 0.188 seconds
+model sparsity: 0.8403%
+save time: 0.016 seconds
+
+D:\SOL-master\build\bin\Debug>
